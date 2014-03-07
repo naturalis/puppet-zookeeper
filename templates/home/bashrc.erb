@@ -1,0 +1,6 @@
+# Set Users path
+export PATH=$PATH:/bin:<%= scope.lookupvar('java_home') %>/bin:<%= scope.lookupvar('base_path') %>/zookeeper/bin
+
+# Set JAVA_HOME (we will also configure JAVA_HOME directly for Hadoop later on)
+export JAVA_HOME=<%= scope.lookupvar('java_home') %>
+
